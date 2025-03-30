@@ -1,10 +1,9 @@
 <script setup>
-import thomasdvd from './components/ThomasDvd.vue'
+import ThomasDvd from './components/ThomasDvd.vue';
 </script>
 
 <template>
-  <thomasdvd/>
+  <ThomasDvd />
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>
