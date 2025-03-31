@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <p class="counter">{{ collisionCount }}</p>
     <img :style="styleObject" class="dvd-logo" src="/thomas.jpg" alt="DVD" />
   </div>
 </template>
@@ -9,7 +10,7 @@ export default {
   name: "DvdBounce",
   data() {
     return {
-      x: window.innerWidth / 2 - 40, // мда
+      x: window.innerWidth / 2 - 40,
       y: window.innerHeight / 2 - 40,
       dx: 3,
       dy: 3,
@@ -17,6 +18,7 @@ export default {
       height: 100,
       windowWidth: window.innerWidth,
       windowHeight: window.innerHeight,
+      collisionCount: localStorage.getItem("collisionCount") || 0,
     };
   },
   computed: {
@@ -39,6 +41,10 @@ export default {
       this.windowWidth = window.innerWidth;
       this.windowHeight = window.innerHeight;
     },
+    updateCollisionCount() {
+      this.collisionCount++;
+      localStorage.setItem("collisionCount", this.collisionCount);
+    },
     moveDvd() {
       setInterval(() => {
         this.x += this.dx;
@@ -46,10 +52,12 @@ export default {
 
         if (this.x + this.width > this.windowWidth || this.x < 0) {
           this.dx *= -1;
+          this.updateCollisionCount();
         }
 
         if (this.y + this.height > this.windowHeight || this.y < 0) {
           this.dy *= -1;
+          this.updateCollisionCount();
         }
       }, 10);
     },
@@ -62,6 +70,12 @@ export default {
   width: 100%;
   min-height: 100vh;
   background-color: black;
+  color: white;
+}
+
+.counter {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 .dvd-logo {
