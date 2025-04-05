@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" ref="container">
     <p class="counter">{{ collisionCount }}</p>
     <img :style="styleObject" class="dvd-logo" src="/thomas.jpg" alt="DVD" />
   </div>
@@ -16,9 +16,9 @@ export default {
       dy: 3,
       width: 100,
       height: 100,
-      windowWidth: window.innerWidth,
-      windowHeight: window.innerHeight,
-      collisionCount: localStorage.getItem("collisionCount") || 0,
+      containerWidth: 0,
+      containerHeight: 0,
+      collisionCount: Number(localStorage.getItem("collisionCount")) || 0,
     };
   },
   computed: {
@@ -30,16 +30,22 @@ export default {
     },
   },
   mounted() {
-    window.addEventListener("resize", this.updateWindowSize);
+    this.updateContainerSize();
+    window.addEventListener("resize", this.updateContainerSize);
     this.moveDvd();
   },
   beforeUnmount() {
-    window.removeEventListener("resize", this.updateWindowSize);
+    window.removeEventListener("resize", this.updateContainerSize);
   },
   methods: {
-    updateWindowSize() {
-      this.windowWidth = window.innerWidth;
-      this.windowHeight = window.innerHeight;
+    updateContainerSize() {
+      this.$nextTick(() => {
+        const container = this.$refs.container;
+        if (container) {
+          this.containerWidth = container.clientWidth;
+          this.containerHeight = container.clientHeight;
+        }
+      });
     },
     updateCollisionCount() {
       this.collisionCount++;
@@ -50,12 +56,12 @@ export default {
         this.x += this.dx;
         this.y += this.dy;
 
-        if (this.x + this.width > this.windowWidth || this.x < 0) {
+        if (this.x + this.width > this.containerWidth || this.x < 0) {
           this.dx *= -1;
           this.updateCollisionCount();
         }
 
-        if (this.y + this.height > this.windowHeight || this.y < 0) {
+        if (this.y + this.height > this.containerHeight || this.y < 0) {
           this.dy *= -1;
           this.updateCollisionCount();
         }
@@ -71,11 +77,18 @@ export default {
   min-height: 100vh;
   background-color: black;
   color: white;
+  position: relative;
+  overflow: hidden;
 }
 
 .counter {
+  font-family: 'Comis Sans MS', sans-serif;
   margin-bottom: 1rem;
   font-size: 1.5rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
 }
 
 .dvd-logo {
