@@ -33,7 +33,6 @@ const toggleTheme = () => {
 .theme-toggle {
     padding: 20px 20px;
     position: relative;
-    left: -25px;
     font-size: 19px;
     border-radius: 8px;
     border: none;

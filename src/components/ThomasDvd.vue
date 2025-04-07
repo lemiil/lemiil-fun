@@ -2,6 +2,8 @@
   <div class="container" ref="container">
     <div class="top-bar">
       <p class="counter">{{ collisionCount }}</p>
+      <h1 style="display: flex; justify-content: center; font-family: 'Comic Sans MS';">This is just playground for Vue
+      </h1>
       <ThemeChanger />
     </div>
     <img :style="styleObject" class="dvd-logo" src="/thomas.jpg" alt="DVD" />
@@ -86,7 +88,6 @@ export default {
   padding: 10px;
   top: 0;
   left: 0;
-  width: 100%;
   z-index: 1;
 }
 
