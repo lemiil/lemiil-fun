@@ -1,9 +1,17 @@
 <template>
   <div class="container" ref="container">
-    <p class="counter">{{ collisionCount }}</p>
+    <div class="top-bar">
+      <p class="counter">{{ collisionCount }}</p>
+      <ThemeChanger />
+    </div>
     <img :style="styleObject" class="dvd-logo" src="/thomas.jpg" alt="DVD" />
   </div>
 </template>
+
+
+<script setup>
+import ThemeChanger from './ThemeChanger.vue';
+</script>
 
 <script>
 export default {
@@ -72,23 +80,26 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  top: 0;
+  left: 0;
   width: 100%;
-  min-height: 100vh;
-  background-color: black;
-  color: white;
-  position: relative;
-  overflow: hidden;
+  z-index: 1;
 }
 
 .counter {
-  font-family: 'Comis Sans MS', sans-serif;
-  margin-bottom: 1rem;
+  font-family: 'Comic Sans MS', sans-serif;
   font-size: 1.5rem;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 1;
+}
+
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .dvd-logo {
