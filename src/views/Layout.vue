@@ -1,28 +1,30 @@
 <template>
     <div id="app">
-        <nav class="nav">
-            <router-link :to="{ name: 'home' }">
-                Home
-            </router-link>
-            <router-link :to="{ name: 'about' }">
-                About me
-            </router-link>
-            <router-link :to="{ name: 'about' }">
-                About me
-            </router-link>
-            <router-link :to="{ name: 'about' }">
-                About me
-            </router-link>
-            <!-- <router-link :to="{ name: 'projects' }">
-                Projects
-            </router-link> -->
-            <!-- <a href="#">Skills</a>
-            <a href="#">Contact</a> -->
-        </nav>
         <header>
-            <h1>Lemiil</h1>
-            <p class="subtitle">Web Developer</p>
+            <div class="row">
+                <h1>Lemiil</h1>
+                <nav class="nav">
+                    <router-link :to="{ name: 'Home' }">
+                        Home
+                    </router-link>
+                    <router-link :to="{ name: 'About' }">
+                        About me
+                    </router-link>
+                    <router-link :to="{ name: 'Projects' }">
+                        Projects
+                    </router-link>
+                    <router-link :to="{ name: 'Contact' }">
+                        Contact
+                    </router-link>
+                </nav>
+
+                <div class="avatar">
+                    <img src="/src/assets/pablofullhd.jpg">
+                </div>
+            </div>
         </header>
+
+
         <main class="main-content">
             <slot />
         </main>
