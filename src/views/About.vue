@@ -1,3 +1,10 @@
+<script setup>
+import layout from './Layout.vue';
+</script>
+
 <template>
-    <h1>About me: nothing</h1>
+    <layout>
+        <h1>About me: nothing</h1>
+    </layout>
+
 </template>
