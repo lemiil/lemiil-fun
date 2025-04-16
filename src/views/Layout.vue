@@ -17,10 +17,11 @@
                         Contact
                     </router-link>
                 </nav>
-
-                <div class="avatar">
-                    <img src="/src/assets/pablofullhd.jpg">
-                </div>
+                <a href="https://github.com/lemiil">
+                    <div class="avatar">
+                        <img src="/src/assets/pablofullhd.jpg">
+                    </div>
+                </a>
             </div>
         </header>
 
