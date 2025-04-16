@@ -23,7 +23,7 @@
             <h1>Lemiil</h1>
             <p class="subtitle">Web Developer</p>
         </header>
-        <main>
+        <main class="main-content">
             <slot />
         </main>
 
