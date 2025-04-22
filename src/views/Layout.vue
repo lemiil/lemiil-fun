@@ -6,7 +6,8 @@
                     <h1 class="text-2xl font-bold">Lemiil</h1>
                 </a>
 
-                <nav class="flex-grow flex justify-center space-x-6">
+                <nav
+                    class="grid grid-cols-2 gap-4 justify-items-center sm:flex sm:justify-center sm:space-x-6 sm:gap-0">
                     <router-link class="accent-hover transition" :to="{ name: 'Home' }">
                         Home
                     </router-link>
@@ -21,10 +22,12 @@
                     </router-link>
                 </nav>
 
+
+
                 <div class="w-1/4 flex justify-end">
                     <div class="avatar">
                         <img src="https://avatars.githubusercontent.com/u/168548703?s=400&u=3cb8a2f7444d7e8069f42e715988448319d06a07&v=4"
-                            alt="avatar">
+                            alt="avatar" class="avatar-img">
                     </div>
                 </div>
             </div>
@@ -46,6 +49,4 @@
 // yeah
 </script>
 
-<style scoped>
-/* yeah */
-</style>
+<style scoped></style>
