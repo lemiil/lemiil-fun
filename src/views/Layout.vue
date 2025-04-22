@@ -1,37 +1,43 @@
 <template>
-    <div id="app">
-        <header>
-            <div class="row">
-                <h1>Lemiil</h1>
-                <nav class="nav">
-                    <router-link :to="{ name: 'Home' }">
+    <div id="app" class="min-h-screen flex flex-col">
+        <header class="accent-border">
+            <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+                <a href="/" class="w-1/4">
+                    <h1 class="text-2xl font-bold">Lemiil</h1>
+                </a>
+
+                <nav class="flex-grow flex justify-center space-x-6">
+                    <router-link class="accent-hover transition" :to="{ name: 'Home' }">
                         Home
                     </router-link>
-                    <router-link :to="{ name: 'About' }">
+                    <router-link class="accent-hover transition" :to="{ name: 'About' }">
                         About me
                     </router-link>
-                    <router-link :to="{ name: 'Projects' }">
+                    <router-link class="accent-hover transition" :to="{ name: 'Projects' }">
                         Projects
                     </router-link>
-                    <router-link :to="{ name: 'Contact' }">
+                    <router-link class="accent-hover transition" :to="{ name: 'Contact' }">
                         Contact
                     </router-link>
                 </nav>
-                <a href="https://github.com/lemiil">
+
+                <div class="w-1/4 flex justify-end">
                     <div class="avatar">
-                        <img src="/src/assets/pablofullhd.jpg">
+                        <img src="https://avatars.githubusercontent.com/u/168548703?s=400&u=3cb8a2f7444d7e8069f42e715988448319d06a07&v=4"
+                            alt="avatar">
                     </div>
-                </a>
+                </div>
             </div>
         </header>
 
-
-        <main class="main-content">
-            <slot />
+        <main class="flex-grow flex items-center justify-center px-4">
+            <div class="text-center max-w-3xl">
+                <slot />
+            </div>
         </main>
 
-        <footer>
-            <p>2025 Lemiil</p>
+        <footer class="text-center py-6 text-gray-500">
+            <p> 2025 &copy; Lemiil</p>
         </footer>
     </div>
 </template>
