@@ -16,7 +16,6 @@
                 <nav class="hidden sm:flex gap-6">
                     <router-link class="accent-hover transition" :to="{ name: 'Home' }">Home</router-link>
                     <router-link class="accent-hover transition" :to="{ name: 'About' }">About me</router-link>
-                    <router-link class="accent-hover transition" :to="{ name: 'Projects' }">Projects</router-link>
                     <router-link class="accent-hover transition" :to="{ name: 'Contact' }">Contact</router-link>
                 </nav>
 
@@ -38,8 +37,6 @@
                         <router-link class="accent-hover transition" @click="isMenuOpen = false"
                             :to="{ name: 'About' }">About me</router-link>
                         <router-link class="accent-hover transition" @click="isMenuOpen = false"
-                            :to="{ name: 'Projects' }">Projects</router-link>
-                        <router-link class="accent-hover transition" @click="isMenuOpen = false"
                             :to="{ name: 'Contact' }">Contact</router-link>
                     </div>
                 </div>
@@ -47,7 +44,7 @@
         </header>
 
         <main class="flex-grow flex items-center justify-center px-4">
-            <div class="text-center max-w-3xl w-full">
+            <div class="text-center max-w-screen-md container">
                 <slot />
             </div>
         </main>
