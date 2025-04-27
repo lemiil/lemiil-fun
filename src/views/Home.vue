@@ -49,10 +49,7 @@ import layout from './Layout.vue';
                     However, let's leave such thoughts aside. The
                     <router-link class="font-semibold underline transition" :to="{ name: 'About' }">About
                         me</router-link>
-                    and
-                    <router-link class="font-semibold underline transition"
-                        :to="{ name: 'Projects' }">Projects</router-link>
-                    pages in particular speak for me as a programmer.
+                    and page in particular speak for me as a programmer.
 
                 </p>
                 <p class="text-lg">Also, by the way, this site in <a href="https://github.com/lemiil/lemiil-fun"
