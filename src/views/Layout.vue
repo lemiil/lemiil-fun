@@ -29,7 +29,7 @@
                 </button>
             </div>
 
-            <transition name="fade">
+            <transition name="slide">
                 <div v-if="isMenuOpen" @click.self="isMenuOpen = false" class="fixed inset-0 z-40 sm:hidden">
                     <div class="bg-coolblack absolute top-0 left-0 w-3/4 h-full p-6 flex flex-col gap-4 z-50 shadow-lg">
                         <router-link class="accent-hover transition" @click="isMenuOpen = false"
@@ -61,13 +61,11 @@ import { ref } from 'vue'
 const isMenuOpen = ref(false)
 </script>
 
-
 <style scoped>
 .router-link-active::after {
     content: " 🐾";
     margin-left: 0.25rem;
 }
-
 
 .fade-enter-active,
 .fade-leave-active {
@@ -79,7 +77,6 @@ const isMenuOpen = ref(false)
     transition: opacity 0.3s ease;
 }
 
-
 .fade-enter-from,
 .fade-leave-to {
     opacity: 0;
@@ -87,7 +84,7 @@ const isMenuOpen = ref(false)
 
 .slide-enter-active,
 .slide-leave-active {
-    transition: transform 0.3s ease;
+    transition: transform 0.6s ease;
 }
 
 .slide-enter-from {
