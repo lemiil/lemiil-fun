@@ -16,7 +16,6 @@
                 <nav class="hidden sm:flex gap-6">
                     <router-link class="accent-hover transition" :to="{ name: 'Home' }">Home</router-link>
                     <router-link class="accent-hover transition" :to="{ name: 'About' }">About me</router-link>
-                    <router-link class="accent-hover transition" :to="{ name: 'Contact' }">Contact</router-link>
                 </nav>
 
                 <button @click="isMenuOpen = !isMenuOpen" class="that-button sm:hidden z-50 ease-in-out">
@@ -36,22 +35,23 @@
                             :to="{ name: 'Home' }">Home</router-link>
                         <router-link class="accent-hover transition" @click="isMenuOpen = false"
                             :to="{ name: 'About' }">About me</router-link>
-                        <router-link class="accent-hover transition" @click="isMenuOpen = false"
-                            :to="{ name: 'Contact' }">Contact</router-link>
                     </div>
                 </div>
             </transition>
         </header>
 
         <main class="flex-grow flex items-center justify-center px-4">
-            <div class="text-center max-w-screen-md container">
+            <div class="text-center max-w-screen-md ">
                 <slot />
             </div>
         </main>
 
-        <footer class="text-center py-6 text-gray-500">
-            <p>2025 &copy; Lemiil</p>
+        <footer class="flex text-center justify-center py-6 text-gray-500 space-y-4">
+            <p>2025 &copy; Lemiil
+            </p>
         </footer>
+
+
     </div>
 
 </template>
@@ -62,6 +62,10 @@ const isMenuOpen = ref(false)
 </script>
 
 <style scoped>
+p {
+    width: 728px;
+}
+
 .router-link-active::after {
     content: " 🐾";
     margin-left: 0.25rem;
