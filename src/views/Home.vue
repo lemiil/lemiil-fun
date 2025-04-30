@@ -56,7 +56,7 @@ import layout from './Layout.vue';
                 <p class="text-lg">
                     I'm available for contact via email:
                     <span class="text-sky-500  hover:underline"><a
-                            href="mailto:lemiil@proton.me">lemiil@proton.me</a></span>
+                            href="mailto:lemiildev@gmail.com">lemiildev@gmail.com</a></span>
                 </p>
 
                 <p class="text-lg">Also, by the way, this site in <a href="https://github.com/lemiil/lemiil-fun"
