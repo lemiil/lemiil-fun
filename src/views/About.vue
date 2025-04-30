@@ -117,19 +117,6 @@ import layout from './Layout.vue';
             </div>
         </section>
 
-
-
-        <section class="px-6 mt-12">
-            <h2 class="text-3xl font-bold mb-8">My GitHub Streak</h2>
-            <div class="flex justify-center">
-                <a href="https://git.io/streak-stats" target="_blank" rel="noopener noreferrer">
-                    <img class="rounded-md hover:scale-105 transition-transform duration-300 ease-in-out"
-                        src="https://github-readme-streak-stats.herokuapp.com?user=lemiil&theme=dark&border_radius=4&mode=weekly"
-                        alt="GitHub Streak" />
-                </a>
-            </div>
-        </section>
-
         <section class="max-w-7xl mx-auto px-6 mt-12">
             <h2 class="text-3xl font-bold mb-8">My Projects</h2>
             <div class="grid md:grid-cols-3 gap-8">
