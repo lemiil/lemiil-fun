@@ -8,7 +8,7 @@ import layout from './Layout.vue';
             <div>
                 <div class="space-y-6 text-left ">
                     <div class="space-y-6 pr-10">
-                        <h2 class="text-3xl font-bold ml-8 text-center">My Tech Stack</h2>
+                        <h2 class="text-3xl font-bold ml-8 text-left">My Tech Stack</h2>
                         <ul class="space-y-4 max-w-3xl ">
                             <li class="flex items-start gap-2">
                                 <svg class="h-6 text-white flex-shrink-0 mt-1" fill="none" stroke="currentColor"
@@ -118,7 +118,7 @@ import layout from './Layout.vue';
         </section>
 
         <section class="max-w-7xl mx-auto px-6 mt-12">
-            <h2 class="text-3xl font-bold mb-8">My Projects</h2>
+            <h2 class="text-3xl font-bold text-left mb-8">My Projects</h2>
             <div class="grid md:grid-cols-3 gap-8">
 
                 <div class="bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
