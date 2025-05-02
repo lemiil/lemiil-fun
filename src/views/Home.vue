@@ -38,15 +38,8 @@ import layout from './Layout.vue';
                     new — like on this website, where I used <a href="https://tailwindcss.com/"
                         class="font-semibold transition underline">Tailwind</a>
                     for the first time.
-                    I'm <span class="font-bold">not afraid of the new</span>, but I also <span class="font-bold">don’t
-                        forget the old</span>.
                 </p>
-                <p class="text-lg">
-                    Every technology has its place, and, in many ways, all
-                    technologies resemble one another.
-                </p>
-                <p class="text-lg">
-                    However, let's leave such thoughts aside. The
+                <p class="text-lg">The
                     <router-link class="font-semibold underline transition" :to="{ name: 'About' }">About
                         me</router-link>
                     and page in particular speak for me as a programmer.
@@ -57,6 +50,8 @@ import layout from './Layout.vue';
                     I'm available for contact via email:
                     <span class="text-sky-500  hover:underline"><a
                             href="mailto:lemiildev@gmail.com">lemiildev@gmail.com</a></span>
+                    or discord: <span style="color: #7289da" class="hover:underline"><a
+                            href="https://discord.com/app">lemiil</a> </span>
                 </p>
 
                 <p class="text-lg">Also, by the way, this site in <a href="https://github.com/lemiil/lemiil-fun"
