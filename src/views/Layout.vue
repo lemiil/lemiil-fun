@@ -4,8 +4,7 @@
             <div class="mx-auto w-full max-w-screen-xl py-6 px-4 flex justify-between items-center">
                 <div class="flex items-center gap-3">
                     <div class="avatar">
-                        <img src="https://avatars.githubusercontent.com/u/168548703?s=400&u=3cb8a2f7444d7e8069f42e715988448319d06a07&v=4"
-                            alt="avatar" class="avatar-img w-10 h-10 rounded-full">
+                        <img src="/pablofullhd.jpg" alt="avatar" class="avatar-img w-10 h-10 rounded-full">
                     </div>
                     <a href="/">
                         <h1 class="text-2xl font-bold">Lemiil</h1>
