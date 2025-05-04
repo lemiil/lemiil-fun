@@ -34,7 +34,7 @@ import layout from './Layout.vue';
                 <p class="text-lg">
                     I try to use proven methods and patterns in web
                     development.
-                    At the same time, I'm alwaysopen to learning something
+                    At the same time, I'm always open to learning something
                     new — like on this website, where I used <a href="https://tailwindcss.com/"
                         class="font-semibold transition underline">Tailwind</a>
                     for the first time.
