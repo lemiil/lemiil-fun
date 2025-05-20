@@ -42,7 +42,7 @@ import layout from './Layout.vue';
                 <p class="text-lg">The
                     <router-link class="font-semibold underline transition" :to="{ name: 'About' }">about
                         me</router-link>
-                    and page in particular speak for me as a programmer.
+                    page in particular speak for me as a programmer.
 
                 </p>
 
