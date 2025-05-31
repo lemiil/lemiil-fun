@@ -49,8 +49,7 @@ import layout from './Layout.vue';
                                 </svg>
                                 <span class="pt-1 text-lg">Proficient in <span class="font-semibold">HTML</span>, <span
                                         class="font-semibold">CSS</span>, and
-                                    <span class="font-semibold">JavaScript</span> (well, who would have
-                                    thought)</span>
+                                    <span class="font-semibold">JavaScript</span></span>
                             </li>
 
                             <li class="flex items-start gap-2">
