@@ -38,7 +38,7 @@ const flipCoin = () => {
         flipping.value = false;
 
         coin.style.transition = "none";
-        coin.style.transform = result === "orel" ? "rotateY(180deg)" : "rotateY(0deg)";
+        coin.style.transform = result === "reshka" ? "rotateY(180deg)" : "rotateY(0deg)";
     }, 2000);
 };
 </script>
