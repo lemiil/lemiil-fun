@@ -4,37 +4,6 @@ import layout from './Layout.vue';
 
 <template>
     <layout>
-       <section class="max-w-7xl mx-auto px-6 mt-12">
-            <h2 class="text-3xl font-bold text-left mb-8">My Projects</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-
-                <div class="bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
-                    <h3 class="text-2xl font-semibold mb-4">Lorem Ipsum</h3>
-                    <p class="text-gray-300 mb-4">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
-                        Ipsum.</p>
-                    <a href="#" class="text-blue-400 hover:underline">Lorem Ipsumt</a>
-                </div>
-
-
-                <div class="bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
-                    <h3 class="text-2xl font-semibold mb-4">Lorem Ipsum</h3>
-                    <p class="text-gray-300 mb-4">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
-                        Ipsum.</p>
-                    <a href="#" class="text-blue-400 hover:underline">Lorem Ipsumt</a>
-                </div>
-
-
-                <div class="bg-gray-800 p-6 rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
-                    <h3 class="text-2xl font-semibold mb-4">Lorem Ipsum</h3>
-                    <p class="text-gray-300 mb-4">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
-                        Ipsum.</p>
-                    <a href="#" class="text-blue-400 hover:underline">Lorem Ipsumt</a>
-                </div>
-            </div>
-        </section>
-
-    
-    
         <section class="pt-6">
             <div>
                 <div class="space-y-6 text-left ">
