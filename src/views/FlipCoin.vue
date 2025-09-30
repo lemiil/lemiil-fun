@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import layout from './Layout.vue';
 
-const side = ref("heads");
+const side = ref("orel");
 const flipping = ref(false);
 const message = ref("Нажмите, чтобы подбросить монетку");
 const params = new URLSearchParams(window.location.search);
@@ -16,17 +16,17 @@ const flipCoin = () => {
 
     let spins = Math.floor(Math.random() * 3) + 3;
     let result;
-    if (param == 'h') {
-        result = "heads";
+    if (param == 'o') {
+        result = "orel";
     }
-    else if (param == 't') {
-        result = "tails"
+    else if (param == 'r') {
+        result = "reshka"
     }
     else {
-        result = Math.random() < 0.5 ? "heads" : "tails";
+        result = Math.random() < 0.5 ? "orel" : "reshka";
     }
 
-    let finalRotation = spins * 360 + (result === "tails" ? 180 : 0);
+    let finalRotation = spins * 360 + (result === "orel" ? 180 : 0);
 
     let coin = document.querySelector(".coin");
     coin.style.transition = "transform 2s cubic-bezier(0.4, 2.3, 0.3, 1)";
@@ -34,11 +34,11 @@ const flipCoin = () => {
 
     setTimeout(() => {
         side.value = result;
-        message.value = `${result === "heads" ? "Орел!" : "Решка!"}`;
+        message.value = `${result === "orel" ? "Орел!" : "Решка!"}`;
         flipping.value = false;
 
         coin.style.transition = "none";
-        coin.style.transform = result === "tails" ? "rotateY(180deg)" : "rotateY(0deg)";
+        coin.style.transform = result === "reshka" ? "rotateY(180deg)" : "rotateY(0deg)";
     }, 2000);
 };
 </script>
