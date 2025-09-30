@@ -26,7 +26,7 @@ const flipCoin = () => {
         result = Math.random() < 0.5 ? "orel" : "reshka";
     }
 
-    let finalRotation = spins * 360 + (result === "orel" ? 180 : 0);
+    let finalRotation = spins * 360 + (result === "orel" ? 0 : 180);
 
     let coin = document.querySelector(".coin");
     coin.style.transition = "transform 2s cubic-bezier(0.4, 2.3, 0.3, 1)";
@@ -38,8 +38,9 @@ const flipCoin = () => {
         flipping.value = false;
 
         coin.style.transition = "none";
-        coin.style.transform = result === "orel" ? "rotateY(180deg)" : "rotateY(0deg)";
+        coin.style.transform = result === "orel" ? "rotateY(0deg)" : "rotateY(180deg)";
     }, 2000);
+
 };
 </script>
 
