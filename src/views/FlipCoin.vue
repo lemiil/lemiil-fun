@@ -4,7 +4,7 @@ import layout from './Layout.vue';
 
 const side = ref("heads");
 const flipping = ref(false);
-const message = ref("Нажмите, чтобы подбросить монетку");
+const message = ref("You can flip a coin!");
 const params = new URLSearchParams(window.location.search);
 const param = params.get("aw");
 
