@@ -23,7 +23,7 @@
                 },
                 {
                     "key": "Content-Security-Policy",
-                    "value": "default-src 'self'; script-src 'self' lemiil.fun; img-src 'self' lemiil.fun; style-src 'self';"
+                    "value": "default-src 'self'; script-src 'self' https://lemiil.fun 'unsafe-hashes'; style-src 'self' https://lemiil.fun 'unsafe-hashes'; img-src 'self' https://lemiil.fun data: blob:;"
                 }
             ]
         },
