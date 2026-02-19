@@ -27,7 +27,7 @@
                 },
                 {
                     "key": "Content-Security-Policy",
-                    "value": "default-src 'self'; script-src 'self' https://lemiil.fun 'strict-dynamic' 'nonce-__CSP_NONCE__'; style-src 'self' https://lemiil.fun 'nonce-__CSP_NONCE__'; img-src 'self' https://lemiil.fun data: blob:; connect-src 'self' https://lemiil.fun; font-src 'self' https://lemiil.fun data:; frame-ancestors 'none'; base-uri 'self'; form-action 'self';"
+                    "value": "default-src 'self'; script-src 'self' https://lemiil.fun 'unsafe-hashes'; style-src 'self' https://lemiil.fun 'unsafe-hashes'; img-src 'self' https://lemiil.fun data: blob:; connect-src 'self' https://lemiil.fun; font-src 'self' https://lemiil.fun data:; frame-ancestors 'none'; base-uri 'self'; form-action 'self';"
                 }
             ]
         },
