@@ -5,7 +5,7 @@ import FlipCoin from './views/FlipCoin.vue'
 
 
 const routes = [
-    { path: '/', name: 'Home', component: Home },
+    { path: '/dev', name: 'Home', component: Home },
     { path: '/about', name: 'About', component: About },
     { path: '/coin', name: 'FlipCoin', component: FlipCoin }
 ]
