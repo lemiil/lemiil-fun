@@ -80,7 +80,9 @@
         </main>
 
         <footer class="flex text-center justify-center py-6 text-gray-500 space-y-4">
-            <p>2025 &copy; Lemiil
+            <p>
+                {{ new Date().getFullYear() }}
+                &copy; Lemiil
             </p>
         </footer>
 
