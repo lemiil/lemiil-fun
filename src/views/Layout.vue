@@ -13,6 +13,7 @@
 
                 <nav class="hidden sm:flex gap-6 items-center">
                     <router-link class="accent-hover transition" :to="{ name: 'Home' }">Home</router-link>
+                    <router-link class="accent-hover transition" :to="{ name: 'Dev' }">Dev</router-link>
                     <router-link class="accent-hover transition" :to="{ name: 'About' }">About me</router-link>
 
                     <a href="https://github.com/lemiil" target="_blank" rel="noopener noreferrer"
@@ -49,6 +50,8 @@
                     <div class="bg-coolblack absolute top-0 left-0 w-3/4 h-full p-6 flex flex-col gap-4 z-50 shadow-lg">
                         <router-link class="accent-hover transition" @click="isMenuOpen = false"
                             :to="{ name: 'Home' }">Home</router-link>
+                        <router-link class="accent-hover transition" @click="isMenuOpen = false"
+                            :to="{ name: 'Dev' }">Dev</router-link>
                         <router-link class="accent-hover transition" @click="isMenuOpen = false"
                             :to="{ name: 'About' }">About me</router-link>
                         <a href="https://github.com/lemiil" target="_blank" rel="noopener noreferrer"

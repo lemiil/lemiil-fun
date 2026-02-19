@@ -4,31 +4,17 @@ import layout from './Layout.vue';
 
 <template>
     <layout>
- 
-        <section class="flex justify-start">
-            <div class="space-y-6 text-left max-w-3xl pr-10">
-                <h1 class="text-3xl font-bold">Hey there!</h1>
-                <p class="text-xl">I'm <span class="font-semibold">Lemiil</span>, a web developer.</p>
-                               <p class="text-lg">The
-                    <router-link class="font-semibold underline transition" :to="{ name: 'About' }">about
-                        me</router-link>
-                    page in particular speak for me as a programmer.
 
-                </p>
+        <img src="/cat.png" width="500" height="500" alt="kitty" srcset="">
 
-                <p class="text-lg">
-                    I'm available for contact via email:
-                    <span class="text-sky-500  hover:underline"><a
-                            href="mailto:lemiildev@gmail.com">lemiildev@gmail.com</a></span>
-                    or discord: <span style="color: #7289da" class="hover:underline"><a
-                            href="https://discord.com/app">lemiil</a> </span>
-                </p>
+        <router-link class="accent-hover transition" :to="{ name: 'FlipCoin' }"><button type="button">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"
+                    fill="currentColor">
+                    <path
+                        d="M17 3.34a10 10 0 1 1 -15 8.66l.005 -.324a10 10 0 0 1 14.995 -8.336zm-5 2.66a1 1 0 0 0 -1 1a3 3 0 1 0 0 6v2a1.024 1.024 0 0 1 -.866 -.398l-.068 -.101a1 1 0 0 0 -1.732 .998a3 3 0 0 0 2.505 1.5h.161a1 1 0 0 0 .883 .994l.117 .007a1 1 0 0 0 1 -1l.176 -.005a3 3 0 0 0 -.176 -5.995v-2c.358 -.012 .671 .14 .866 .398l.068 .101a1 1 0 0 0 1.732 -.998a3 3 0 0 0 -2.505 -1.501h-.161a1 1 0 0 0 -1 -1zm1 7a1 1 0 0 1 0 2v-2zm-2 -4v2a1 1 0 0 1 0 -2z" />
+                </svg>
+            </button></router-link>
 
-                <p class="text-lg">Also, by the way, this site in <a href="https://github.com/lemiil/lemiil-fun"
-                        class="font-semibold transition underline">open source</a>.
-                </p>
-            </div>
-        </section>
     </layout>
 
 
