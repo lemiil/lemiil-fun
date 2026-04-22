@@ -111,12 +111,20 @@ import layout from './Layout.vue';
                                     <span class="font-semibold">AWS</span> deployment</span>
                             </li>
                         </ul>
+
                     </div>
                 </div>
             </div>
         </section>
-
-         </layout>
+        <section class="pt-6">
+            <div class="flex justify-center">
+                <a href="/Лемешко Гавриїл CV.pdf" target="_blank" rel="noopener"
+                    class="inline-flex text-lg text-center items-center tracking-wide accent-hover transition">
+                    <span>View Resume</span>
+                </a>
+            </div>
+        </section>
+    </layout>
 
 
 
