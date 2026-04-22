@@ -118,7 +118,7 @@ import layout from './Layout.vue';
         </section>
         <section class="pt-6">
             <div class="flex justify-center">
-                <a href="/Лемешко Гавриїл CV.pdf" target="_blank" rel="noopener"
+                <a href="/Havriil_Lemeshko_CV.pdf" target="_blank" rel="noopener"
                     class="inline-flex text-lg text-center items-center tracking-wide accent-hover transition">
                     <span>View Resume</span>
                 </a>
